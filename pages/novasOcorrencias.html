@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/novasOcorrencias.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Ocorrência</title>
@@ -12,15 +13,16 @@
         <img
           src="../assets/img/logo-voz-do-bairro.png"
           alt="Logo Voz do Bairro"
+          height="70"
         />
       </div>
       <nav class="ocorrenciaHeaderNav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Ocorrências</a></li>
-          <li><a href="">Acompanhar Ocorrência</a></li>
-          <li><a href="">Nova Ocorrência</a></li>
-          <li><a href="">Cadastre-se | Entre</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Ocorrências</a></li>
+          <li><a href="#">Acompanhar Ocorrência</a></li>
+          <li><a href="#">Nova Ocorrência</a></li>
+          <li><a href="#">Cadastre-se | Entre</a></li>
         </ul>
       </nav>
     </header>
@@ -28,22 +30,196 @@
       <section class="ocorrenciaMainAlerta">
         <h1 class="ocorrenciaMainTextoPrincipal">Registrar nova ocorrência</h1>
         <p class="ocorrenciaMainParagrafo">
-          conte o que está acontecendo na sua rua, informe o local e acompanhe o
+          Conte o que está acontecendo na sua rua, informe o local e acompanhe o
           andamento depois do envio.
         </p>
       </section>
       <section class="novaOcorrencia">
-        <h2 class="ocorrênciaTextoAlerta">Nº da ocorrência</h2>
+        <p class="ocorrenciaTextoAlerta">Nº da ocorrência</p>
         <!--Aqui eu tenho que criar em javascript uma sequencia de numeros padronizados que vai ser o numero da ocorrencia 
         
         exemplo: #123456789 -->
-        <button class="ocorrenciaRascunho">Rascunho</button>
+        <span class="rascunho">Rascunho</span>
       </section>
+      <hr />
       <section class="informacoesOcorrencia">
-        <div class="">
+        <form id="formOcorrencia">
+          <div class="tituloOcorrencia">
+            <label for="campoTituloOcorrencia"
+              ><span aria-hidden="true">☰</span> Título da ocorrência</label
+            >
+            <input
+              placeholder="Ex: Buraco na Rua"
+              type="text"
+              id="campoTituloOcorrencia"
+              name="campoTituloOcorrencia"
+            />
+          </div>
+          <div class="categoriaOcorrencias">
+            <fieldset>
+              <legend>Categoria</legend>
 
-        </div>
+              <input
+                type="radio"
+                id="categoria-ViasEcalcadas"
+                name="categoria"
+                value="viasEcalcadas"
+              />
+              <label for="categoria-ViasEcalcadas">Vias e calçadas</label>
+
+              <input
+                type="radio"
+                id="categoria-iluminacao"
+                name="categoria"
+                value="iluminacao"
+              />
+              <label for="categoria-iluminacao">Iluminação</label>
+
+              <input
+                type="radio"
+                id="categoria-lixoEentulho"
+                name="categoria"
+                value="lixoEentulho"
+              />
+              <label for="categoria-lixoEentulho">Lixo e entulho</label>
+
+              <input
+                type="radio"
+                id="categoria-esgotoEagua"
+                name="categoria"
+                value="esgotoEagua"
+              />
+              <label for="categoria-esgotoEagua">Esgoto e água</label>
+
+              <input
+                type="radio"
+                id="categoria-Seguranca"
+                name="categoria"
+                value="seguranca"
+              />
+              <label for="categoria-Seguranca">Segurança</label>
+
+              <input
+                type="radio"
+                id="categoria-outros"
+                name="categoria"
+                value="outros"
+              />
+              <label for="categoria-outros">Outros</label>
+            </fieldset>
+          </div>
+          <div class="localizacaoOcorrencia">
+            <fieldset>
+              <legend><span aria-hidden="true">⌖</span> Localização</legend>
+              <label for="ruaEnumero">Rua e número</label>
+              <input
+                placeholder="Ex: Rua das Flores, 123"
+                type="text"
+                id="ruaEnumero"
+                name="ruaEnumero"
+              />
+              <label for="bairro">Bairro</label>
+              <input
+                placeholder="Ex: Ilha Anchieta"
+                type="text"
+                id="bairro"
+                name="bairro"
+              />
+              <button type="button" class="minhaLocalizacao">
+                <span aria-hidden="true">⌖</span> Usar minha localização
+              </button>
+            </fieldset>
+          </div>
+          <hr />
+          <div class="descricaoOcorrencia">
+            <label for="descricao">Descrição</label>
+            <textarea
+              placeholder="O que está acontecendo, desde quando e quem é afetado?"
+              id="descricao"
+              name="descricao"
+            ></textarea>
+          </div>
+          <div class="fotosOcorrencia">
+            <fieldset>
+              <legend>Fotos (opcional)</legend>
+              <input
+                type="file"
+                id="fotos"
+                name="fotos"
+                accept="image/*"
+                multiple
+              />
+              <label for="fotos">Adicionar fotos</label>
+              <p class="semFotos">Nenhuma foto adicionada ainda.</p>
+            </fieldset>
+          </div>
+          <div class="urgenciaOcorrencia">
+            <fieldset>
+              <legend>Urgência</legend>
+
+              <input
+                type="radio"
+                id="urgenciaBaixa"
+                name="nivel"
+                value="baixa"
+              />
+              <label for="urgenciaBaixa">Baixa</label>
+
+              <input
+                type="radio"
+                id="urgenciaMedia"
+                name="nivel"
+                value="media"
+              />
+              <label for="urgenciaMedia">Média</label>
+
+              <input type="radio" id="urgenciaAlta" name="nivel" value="alta" />
+              <label for="urgenciaAlta">Alta</label>
+            </fieldset>
+          </div>
+          <hr />
+          <div class="bts">
+            <button type="button" class="salvar" name="acao" value="salvar">
+              Salvar rascunho
+            </button>
+            <button type="submit" class="enviar" name="acao" value="enviar">
+              Enviar ocorrência
+            </button>
+          </div>
+        </form>
       </section>
+      <aside>
+        <section class="depoisDeEnviarOcorrencia">
+          <h2>Depois de enviar</h2>
+          <ol>
+            <li>
+              <strong>Ocorrência cadastrada</strong>
+              <p>Você recebe um número de protocolo para acompanhar.</p>
+            </li>
+            <li>
+              <strong>Em análise</strong>
+              <p>A equipe responsável avalia a demanda.</p>
+            </li>
+            <li>
+              <strong>Resolvida</strong>
+              <p>Você é avisado quando o problema for resolvido.</p>
+            </li>
+          </ol>
+          <div class="importanteOcorrencia">
+            <h3><span aria-hidden="true">ⓘ</span> Importante</h3>
+            <p>
+              Em caso de risco imediato, não espere pela plataforma. Ligue
+              <a href="tel:190">190</a>, <a href="tel:192">192</a> ou
+              <a href="tel:193">193</a>.
+            </p>
+          </div>
+        </section>
+        <section class="duvidas">
+          <h2><span aria-hidden="true">•••</span> Dúvidas?</h2>
+          <p>Se precisar de mais informações, entre em contato conosco.</p>
+          <button type="button"><span aria-hidden="true">✉</span> Falar com a equipe</button>
+        </section>
+      </aside>
     </main>
     <footer></footer>
   </body>
