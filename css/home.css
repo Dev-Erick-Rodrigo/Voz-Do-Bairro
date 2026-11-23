@@ -10,44 +10,49 @@ body{
     font-family: "Poppins", sans-serif;
     width: 100%;
     overflow-x: hidden;
-    background-color: white;
-
+    background-color: #ffffff; 
 }
 
 .homeContent{
-    max-width: none;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    width: 100%;            
+    max-width: 1920px;     
+    margin: 0 auto;        
+    min-height: 100vh;
+    background-color: #ffffff; /* Base totalmente branca */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
-header{
-    max-height: 182px;
+
+header.homeHeader, 
+header {
+    width: 100%;
     display: flex;
-    padding: 0 auto;
-    justify-content: space-around;
+    padding: 20px 80px;
+    justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 10;
 }
 
 .homeHeaderImg{
-    width: 135px;
-    height: 120px;
+    width: 120px;
+    height: 90px;
 }
 
 .homeHeaderNav,
 .homeHeaderNav ul,
 .homeHeaderNav li,
 .homeHeaderNav a{
-    justify-content: center;
-    align-items: center;
     display: flex;
+    align-items: center;
     text-decoration: none;
     list-style: none;
     color: #3E4C35;
-    gap: 51px;
+    gap: 80px;
     font-size: 14px;
     font-weight: 600;
-    max-width: 100%;
 }
 
 .SimpleBtn:hover{
@@ -59,7 +64,7 @@ header{
 .RegBtn{
     background-color: #3E4C35;
     color: white;
-    padding: 10px;
+    padding: 10px 16px;
     border-radius: 20px;
 }
 
@@ -67,23 +72,26 @@ header{
     transition: 0.3s;
     background-color: #C0FD75;
     color: #3E4C35;
-    font-size: 16px;
     border-radius: 40px;
 }
-
 .homeMain{
-     width: 100vw;
-     max-width: none;
+    width: 100%;    
+    background-color: #ffffff; 
+}
+.homeHero{
     background-color: #EEFFF0;
-    padding: 80px;
+    padding: 80px 80px 120px;
+    width: 100%;
 }
 
 .homeHeroTitle{
     font-size: 28px;
+    color: #3E4C35;
 }
 
 .homeHeroTitle span{
     font-size: 36px;
+    color: #3E4C35;
 }
 
 .homeHeroTitle span:hover{
@@ -93,6 +101,7 @@ header{
 
 .homeHeroText{
     font-size: 14px;
+    color: #3E4C35;
     padding: 20px 0px 60px;
 }
 
@@ -110,6 +119,148 @@ header{
     color: #3E4C35;
     background-color: #C0FD75;
     transition: 0.3s;
-    font-size: 16px;
     border-radius: 40px;
+}
+
+/* Cards de estatísticas */
+.homeHeroCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.homeHeroCardLeft,
+.homeHeroCardCenter,
+.homeHeroCardRight{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    width: 360px;
+    border: 1.5px solid #3E4C35;
+    border-radius: 30px;
+    color: #3E4C35;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(62, 76, 53, 0.08);
+    
+}
+
+.homeHeroCardLeft img,
+.homeHeroCardCenter img,
+.homeHeroCardRight img {
+    background-color: #3E4C35;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.homeHeroCardStats{
+    display: flex;
+    flex-direction: column;
+}
+
+.homeHeroLeftInfo,
+.homeHeroCenterInfo,
+.homeHeroRightInfo{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.homeServiceCentral{
+    background-color: #ffffff;
+    padding: 80px;
+    width: 100%;
+}
+
+.homeServiceCentral h2{
+    color: #3E4C35;
+    font-size: 28px;
+    font-weight: 700;
+}
+.homeServiceCentral p{
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 64px;
+}
+
+.homeServiceCards{
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    justify-content: center;
+    gap: 30px;
+    line-height: 1.1;
+}
+
+
+.homeServicesMapBox,
+.homeServicesRequestBox,
+.homeServicesNewsBox,
+.homeServicesContactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 35px;
+    max-height: 230px;
+    object-fit: contain;
+
+}
+
+.homeServicesMapBox:hover,
+.homeServicesRequestBox:hover,
+.homeServicesNewsBox:hover,
+.homeServicesContactBox:hover{
+    transition: 0.3s;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(62, 76, 53, 0.12);
+    color: #3E4C35;
+}
+
+.homeServicesMapBox a,
+.homeServicesRequestBox a,
+.homeServicesNewsBox a,
+.homeServicesContactBox a{
+    line-height: 0.1;
+    text-decoration: none;
+    color: black;
+}
+.homeServicesMapBox a:hover,
+.homeServicesRequestBox a:hover,
+.homeServicesNewsBox a:hover,
+.homeServicesContactBox a:hover{
+    transition: 0.2s;
+    padding: 0 20px;
+    color: #3E4C35;
+    font-weight: 700;
+}
+
+
+
+
+.homeServicesMapBox img,
+.homeServicesRequestBox img,
+.homeServicesNewsBox img,
+.homeServicesContactBox img{
+    height: 50px;
+    width: 50px;
+    background-color: #EEFFF0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.homeRequests {
+    background-color: #ffffff;
+    padding: 0 80px 80px 80px;
+    width: 100%;
 }
