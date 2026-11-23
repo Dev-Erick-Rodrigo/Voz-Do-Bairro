@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/avaliacoes.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliações</title>
+  </head>
+  <body>
+    <header class="avaliacaoHeader">
+      <div class="avaliacaoHeaderLogo">
+        <img
+          src="../assets/img/logo-voz-do-bairro.svg"
+          alt="Logo Voz do Bairro"
+          height="70"
+        />
+        <p>Voz do Bairro</p>
+      </div>
+      <nav class="avaliacaoHeaderNav">
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Cadastre-se | Entre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="avaliacaoMain">
+      <section class="avaliacaoMainDestaque">
+        <h1 class="avaliacaoMainTextoPrincipal">Avaliações</h1>
+        <p class="avaliacaoMainParagrafo">
+          Veja o que os moradores estão dizendo sobre o Voz do Bairro e conte
+          também como foi a sua experiência com a plataforma.
+        </p>
+        <a href="#"><span aria-hidden="true">←</span> Voltar para o início</a>
+      </section>
+      <div class="avaliacaoConteudo">
+        <div class="colunaAvaliacoes">
+          <section class="resumoAvaliacoes">
+            <div class="notaMedia">
+              <p class="notaMediaNumero">4,6</p>
+              <span class="estrelas" role="img" aria-label="Nota 4,6 de 5"
+                >★★★★★</span
+              >
+              <p>128 avaliações</p>
+            </div>
+            <ul class="distribuicaoAvaliacoes">
+              <li>
+                <span>5 estrelas</span>
+                <progress
+                  aria-label="5 estrelas"
+                  value="72"
+                  max="100"
+                ></progress>
+                <span>72%</span>
+              </li>
+              <li>
+                <span>4 estrelas</span>
+                <progress
+                  aria-label="4 estrelas"
+                  value="18"
+                  max="100"
+                ></progress>
+                <span>18%</span>
+              </li>
+              <li>
+                <span>3 estrelas</span>
+                <progress
+                  aria-label="3 estrelas"
+                  value="6"
+                  max="100"
+                ></progress>
+                <span>6%</span>
+              </li>
+              <li>
+                <span>2 estrelas</span>
+                <progress
+                  aria-label="2 estrelas"
+                  value="3"
+                  max="100"
+                ></progress>
+                <span>3%</span>
+              </li>
+              <li>
+                <span>1 estrela</span>
+                <progress
+                  aria-label="1 estrela"
+                  value="1"
+                  max="100"
+                ></progress>
+                <span>1%</span>
+              </li>
+            </ul>
+          </section>
+          <form id="formFiltros" class="filtrosAvaliacoes">
+            <fieldset>
+              <legend>Filtrar por nota</legend>
+
+              <input
+                type="radio"
+                id="filtro-todas"
+                name="filtroNota"
+                value="todas"
+                checked
+              />
+              <label for="filtro-todas">Todas</label>
+
+              <input
+                type="radio"
+                id="filtro-5estrelas"
+                name="filtroNota"
+                value="5estrelas"
+              />
+              <label for="filtro-5estrelas">5 estrelas</label>
+
+              <input
+                type="radio"
+                id="filtro-4estrelas"
+                name="filtroNota"
+                value="4estrelas"
+              />
+              <label for="filtro-4estrelas">4 estrelas</label>
+
+              <input
+                type="radio"
+                id="filtro-3ouMenos"
+                name="filtroNota"
+                value="3ouMenos"
+              />
+              <label for="filtro-3ouMenos">3 ou menos</label>
+            </fieldset>
+            <div class="ordenarAvaliacoes">
+              <label for="ordenar">Ordenar por</label>
+              <select id="ordenar" name="ordenar">
+                <option value="recentes">Mais recentes</option>
+                <option value="antigas">Mais antigas</option>
+                <option value="maiorNota">Maior nota</option>
+                <option value="menorNota">Menor nota</option>
+              </select>
+            </div>
+          </form>
+          <section class="listaAvaliacoes" aria-label="Lista de avaliações">
+            <article class="avaliacaoCard">
+              <div class="avaliacaoTopo">
+                <div class="avaliacaoAutor">
+                  <span class="avatar" aria-hidden="true">MS</span>
+                  <div class="avaliacaoAutorInfo">
+                    <p class="avaliacaoNome">Mariana Souza</p>
+                    <p class="avaliacaoLocalData">
+                      Jardim das Oliveiras ·
+                      <time datetime="2026-10-22">22 de out. de 2026</time>
+                    </p>
+                  </div>
+                </div>
+                <span class="estrelas" role="img" aria-label="Nota 5 de 5"
+                  >★★★★★</span
+                >
+              </div>
+              <h2>Buraco consertado em uma semana</h2>
+              <p>
+                Registrei a ocorrência do buraco na minha rua e consegui
+                acompanhar cada etapa pela página. Em poucos dias a equipe
+                resolveu. Recomendo para todo mundo do bairro!
+              </p>
+              <div class="avaliacaoRodape">
+                <span class="avaliacaoStatus">Ocorrência resolvida</span>
+                <p>Útil · 24 pessoas</p>
+              </div>
+            </article>
+            <article class="avaliacaoCard">
+              <div class="avaliacaoTopo">
+                <div class="avaliacaoAutor">
+                  <span class="avatar" aria-hidden="true">CE</span>
+                  <div class="avaliacaoAutorInfo">
+                    <p class="avaliacaoNome">Carlos Eduardo</p>
+                    <p class="avaliacaoLocalData">
+                      Vila Nova ·
+                      <time datetime="2026-10-18">18 de out. de 2026</time>
+                    </p>
+                  </div>
+                </div>
+                <span class="estrelas" role="img" aria-label="Nota 4 de 5"
+                  >★★★★☆</span
+                >
+              </div>
+              <h2>Fácil de usar, só faltam mais notificações</h2>
+              <p>
+                O cadastro é rápido e o formulário é bem claro. Senti falta de
+                avisos por e-mail quando o status muda, mas no geral a
+                experiência foi muito boa.
+              </p>
+              <div class="respostaEquipe">
+                <h3>Resposta da equipe Voz do Bairro</h3>
+                <p>
+                  Obrigado pelo retorno, Carlos! Estamos trabalhando nas
+                  notificações por e-mail e elas chegam nas próximas
+                  atualizações.
+                </p>
+              </div>
+              <div class="avaliacaoRodape">
+                <span class="avaliacaoStatus">Em análise</span>
+                <p>Útil · 11 pessoas</p>
+              </div>
+            </article>
+            <article class="avaliacaoCard">
+              <div class="avaliacaoTopo">
+                <div class="avaliacaoAutor">
+                  <span class="avatar" aria-hidden="true">AR</span>
+                  <div class="avaliacaoAutorInfo">
+                    <p class="avaliacaoNome">Ana Paula Ribeiro</p>
+                    <p class="avaliacaoLocalData">
+                      Centro ·
+                      <time datetime="2026-10-12">12 de out. de 2026</time>
+                    </p>
+                  </div>
+                </div>
+                <span class="estrelas" role="img" aria-label="Nota 5 de 5"
+                  >★★★★★</span
+                >
+              </div>
+              <h2>Finalmente alguém ouve o bairro</h2>
+              <p>
+                Antes eu não sabia a quem recorrer quando a iluminação da praça
+                queimava. Agora eu registro, acompanho e vejo a resposta. É
+                muito importante para a comunidade.
+              </p>
+              <div class="avaliacaoRodape">
+                <span class="avaliacaoStatus">Ocorrência resolvida</span>
+                <p>Útil · 18 pessoas</p>
+              </div>
+            </article>
+            <article class="avaliacaoCard">
+              <div class="avaliacaoTopo">
+                <div class="avaliacaoAutor">
+                  <span class="avatar" aria-hidden="true">RL</span>
+                  <div class="avaliacaoAutorInfo">
+                    <p class="avaliacaoNome">Roberto Lima</p>
+                    <p class="avaliacaoLocalData">
+                      Parque das Acácias ·
+                      <time datetime="2026-10-05">05 de out. de 2026</time>
+                    </p>
+                  </div>
+                </div>
+                <span class="estrelas" role="img" aria-label="Nota 3 de 5"
+                  >★★★☆☆</span
+                >
+              </div>
+              <h2>Boa ideia, mas o mapa poderia melhorar</h2>
+              <p>
+                A plataforma é ótima e acompanhei minha ocorrência sem
+                problemas. Só achei difícil marcar o local exato no mapa pelo
+                celular.
+              </p>
+              <div class="avaliacaoRodape">
+                <span class="avaliacaoStatus">Encaminhada</span>
+                <p>Útil · 6 pessoas</p>
+              </div>
+            </article>
+          </section>
+          <nav class="paginacao" aria-label="Paginação">
+            <ul>
+              <li><a href="#" aria-label="Página anterior">‹</a></li>
+              <li><a href="#" aria-current="page">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#" aria-label="Próxima página">›</a></li>
+            </ul>
+          </nav>
+        </div>
+        <aside>
+          <section class="deixeAvaliacao">
+            <h2>Deixe sua avaliação</h2>
+            <p>Conte como foi sua experiência com a plataforma.</p>
+            <form id="formAvaliacao">
+              <div class="notaAvaliacao">
+                <fieldset>
+                  <legend>Sua nota</legend>
+
+                  <input type="radio" id="nota1" name="nota" value="1" />
+                  <label for="nota1">
+                    <span aria-hidden="true">★</span>
+                    <span class="soLeitorDeTela">1 estrela</span>
+                  </label>
+
+                  <input type="radio" id="nota2" name="nota" value="2" />
+                  <label for="nota2">
+                    <span aria-hidden="true">★</span>
+                    <span class="soLeitorDeTela">2 estrelas</span>
+                  </label>
+
+                  <input type="radio" id="nota3" name="nota" value="3" />
+                  <label for="nota3">
+                    <span aria-hidden="true">★</span>
+                    <span class="soLeitorDeTela">3 estrelas</span>
+                  </label>
+
+                  <input type="radio" id="nota4" name="nota" value="4" />
+                  <label for="nota4">
+                    <span aria-hidden="true">★</span>
+                    <span class="soLeitorDeTela">4 estrelas</span>
+                  </label>
+
+                  <input type="radio" id="nota5" name="nota" value="5" />
+                  <label for="nota5">
+                    <span aria-hidden="true">★</span>
+                    <span class="soLeitorDeTela">5 estrelas</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="nomeAvaliacao">
+                <label for="nomeAvaliacao">Nome</label>
+                <input
+                  placeholder="Seu nome"
+                  type="text"
+                  id="nomeAvaliacao"
+                  name="nomeAvaliacao"
+                />
+              </div>
+              <div class="bairroAvaliacao">
+                <label for="bairroAvaliacao">Bairro</label>
+                <input
+                  placeholder="Ex.: Jardim das Oliveiras"
+                  type="text"
+                  id="bairroAvaliacao"
+                  name="bairroAvaliacao"
+                />
+              </div>
+              <div class="comentarioAvaliacao">
+                <label for="comentario">Comentário</label>
+                <textarea
+                  placeholder="Escreva aqui sua avaliação..."
+                  id="comentario"
+                  name="comentario"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="enviarAvaliacao"
+                name="acao"
+                value="enviar"
+              >
+                Enviar avaliação
+              </button>
+            </form>
+          </section>
+          <section class="importanteAvaliacao">
+            <span class="iconeInfo" aria-hidden="true">i</span>
+            <div class="importanteAvaliacaoTexto">
+              <h2>Importante</h2>
+              <p>
+                As avaliações são analisadas pela equipe antes de serem
+                publicadas. Isso pode levar até 48 horas.
+              </p>
+            </div>
+          </section>
+          <section class="duvidas">
+            <h2>Dúvidas?</h2>
+            <p>Se precisar de mais informações, entre em contato conosco.</p>
+            <button type="button">Falar com a equipe</button>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="avaliacaoFooter">
+      <img
+        src="../assets/img/logo-voz-do-bairro.svg"
+        alt="Logo Voz do bairro"
+        height="70"
+      />
+      <p>Informação, participação e cuidado com os espaços públicos.</p>
+      <nav class="outrasPaginas">
+        <ul>
+          <li><a href="#">Registrar</a></li>
+          <li><a href="#">Acompanhamento</a></li>
+          <li><a href="#">Avalie-nos</a></li>
+        </ul>
+      </nav>
+      <div class="direitosAutorais">
+        <p>© 2026 Voz do Bairro.</p>
+        <p>Todos os Direitos Reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
