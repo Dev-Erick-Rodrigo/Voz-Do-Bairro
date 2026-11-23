@@ -1,82 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-font-family: "Poppins";
-margin: 0px;
-padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.homeHero{
- background-color: #EEFFF0;
- padding-top: 10px;
-padding-left: 80px;
-padding-right: 80px;
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+
+}
+
+.homeContent{
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header{
+    max-height: 182px;
+    display: flex;
+    padding: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeHeaderImg{
+    width: 135px;
+    height: 120px;
+}
+
+.homeHeaderNav,
+.homeHeaderNav ul,
+.homeHeaderNav li,
+.homeHeaderNav a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: #3E4C35;
+    gap: 51px;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100%;
+}
+
+.SimpleBtn:hover{
+    transition: 0.7s;
+    border-bottom: 2px solid #6BBF00;
+    font-size: 16px;
+}
+
+.RegBtn{
+    background-color: #3E4C35;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.RegBtn:hover{
+    transition: 0.3s;
+    background-color: #C0FD75;
+    color: #3E4C35;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.homeMain{
+     width: 100vw;
+     max-width: none;
+    background-color: #EEFFF0;
+    padding: 80px;
 }
 
 .homeHeroTitle{
-    color: #3E4C35;
-    font-weight: 700;
-    font-size: 42px
+    font-size: 28px;
+}
+
+.homeHeroTitle span{
+    font-size: 36px;
+}
+
+.homeHeroTitle span:hover{
+    font-size: 46px;
+    transition: 0.3s;
 }
 
 .homeHeroText{
-    margin-bottom: 50px;
+    font-size: 14px;
+    padding: 20px 0px 60px;
 }
 
 .homeHeroBtn{
     text-decoration: none;
     color: #EEFFF0;
     background-color: #3E4C35;
-    padding: 15px 25px;
-    border-radius: 10px;
-}
-
-.homeHeroCards{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 32px;
-    
-}
-
-.homeHeroCards img{
-    padding: 20px;
-    background-color: #3E4C35;
-    border-radius: 15px;
-    height: 30px;
-    width: 30px;
-    
-}
-
-.homeHeroCardLeft,
-.homeHeroCardCenter,
-.homeHeroCardRight{
-    border: 1px solid;
+    padding: 12px 20px;
     border-radius: 20px;
-    height: 100px;
-    width: 350px;
-    padding: 10px;
-    background-color: #f1ffea;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    color: #3E4C35;
-   
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.homeHeroLeftInfo,
-.homeHeroCenterInfo,
-.homeHeroRightInfo{
-    font-size: 24px;
-    font-weight: 700;
-    margin: 20px 0px;
-    line-height: 0;
-    align-items: center;
-    align-content: center;
+.homeHeroBtn:hover{
+    color: #3E4C35;
+    background-color: #C0FD75;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 40px;
 }
