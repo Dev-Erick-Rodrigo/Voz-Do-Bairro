@@ -1,0 +1,60 @@
+.heardertermosdeuso{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5dea8;
+}
+
+.paragrafo{
+  border-bottom: 1px solid #b5dea8;
+  padding-bottom: 20px;
+  margin: 0px 15px;
+}
+
+p{
+  margin: 20px;
+}
+
+h1{
+  color: #123D27;
+  margin: 20px;
+}
+
+ol{
+  color: #123D27;
+}
+
+.contatotermosdeuso{
+  display: grid;
+  columns: 2px;
+  border: 2px solid;
+  border-radius: 20px;
+  color: #b5dea8;
+  margin: 0px 20px;
+  margin-right: 840px;
+}
+
+.emailtermosdeuso{
+  display: flex;
+  align-items: center;
+  color: #123D27;
+  margin: 0px 20px;
+}
+
+.telefonetermosdeuso{
+  display: flex;
+  align-items: center;
+  color: #123D27;
+  margin: 0px 20px;
+}
+
+.navtermosdeuso{
+  border: 2px solid;
+}
+
+.rodapetermosdeuso{
+  background-color: #b5dea8;
+  color: #123D27;
+  display: flex;
+  justify-content: center;
+}
