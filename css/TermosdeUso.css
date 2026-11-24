@@ -31,7 +31,7 @@ ol{
   border-radius: 20px;
   color: #b5dea8;
   margin: 0px 20px;
-  margin-right: 840px;
+  margin-right: 2040px;
 }
 
 .emailtermosdeuso{
@@ -48,8 +48,18 @@ ol{
   margin: 0px 20px;
 }
 
-.navtermosdeuso{
-  border: 2px solid;
+.btn{
+background-color: transparent;
+border-radius: 20px;
+color: #b5dea8;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+
+.navtermosdeuso a{
+  text-decoration: none;
+  color: #123D27;
 }
 
 .rodapetermosdeuso{
@@ -57,4 +67,5 @@ ol{
   color: #123D27;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
