@@ -520,7 +520,15 @@ hr {
     justify-content: start;
     gap: 28px 36px;
 }
+.rodape-logo {
+    grid-area: logo;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
 
+.rodape .logo-imagem { height: 96px; }
 .rodape-coluna { display: flex; flex-direction: column; gap: 10px; }
 
 .rodape-coluna h4 {
