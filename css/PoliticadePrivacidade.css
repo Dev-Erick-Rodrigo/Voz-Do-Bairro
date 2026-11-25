@@ -1,0 +1,46 @@
+.headerpoliticadeprivacidade{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b5dea8;
+}
+
+.paragrafopoliticadeprivacidade{
+   border-bottom: 1px solid #b5dea8;
+  padding-bottom: 20px;
+  margin: 0px 15px;
+}
+
+h1{
+   color: #123D27;
+}
+
+ol{
+  color: #123D27;
+}
+
+
+.contatopoliticadeprivacidade{
+  display: grid;
+  columns: 2px;
+  border: 2px solid;
+  border-radius: 20px;
+  color: #b5dea8;
+  margin: 0px 20px;
+  margin-right: 2020px;
+}
+
+.emailpoliticadeprivacidade{
+ display: flex;
+  align-items: center;
+  color: #123D27;
+  margin: 0px 20px;
+}
+
+  .rodapepoliticadeprivacidade{
+    background-color: #b5dea8;
+  color: #123D27;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  }
