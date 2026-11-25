@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background: url('../assets/img/tela\ de\ fundo.jpg') no-repeat center center / cover;
+    background: url('../assets/img/login\ fundo.png') no-repeat center center / cover;
 }
 
 /* --- HEADER --- */
@@ -168,8 +168,8 @@ header.heroHeader {
 }
 
 .login:hover {
-    background-color: #C0FD75;
-    color: #3E4C35;
+    background-color: #3E4C35;
+    color: #fffffe;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
