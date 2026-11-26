@@ -18,10 +18,9 @@ body{
     max-width: 1920px;     
     margin: 0 auto;        
     min-height: 100vh;
-    background-color: #ffffff; /* Base totalmente branca */
+    background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
-
 
 header.heroHeader, 
 header {
@@ -32,10 +31,9 @@ header {
     align-items: center;
     background-color: #ffffff;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
-    position: relative;
-    z-index: 10;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .heroHeaderImg{
@@ -90,7 +88,6 @@ header {
 .heroText{
     display: flex;
     flex-direction: column;
-    align-content: center;
 }
 
 .heroText h1{
@@ -105,23 +102,23 @@ header {
 .heroText p{
     font-size: 20px;
     font-weight: 300;
+    margin-top: 15px;
 }
+
 .heroSection img{
     height: 650px;
     width: 400px;
     border-radius: 500px;
-
+    object-fit: cover;
 }
-
 
 .aboutService{
     width: 100%;
     padding: 80px;
-
 }
 
 .aboutService h2{
-    font-size: 28px
+    font-size: 28px;
 }
 
 .aboutService strong{
@@ -143,7 +140,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    color:black;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     line-height: 3;
     width: 300px;
@@ -152,6 +149,7 @@ header {
     font-style: italic;
     font-size: 20px;
     margin: 32px 0px;
+    background-color: #ffffff;
 }
 
 .ServiceCards:hover{
@@ -164,6 +162,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
 }
 
@@ -176,10 +175,11 @@ header {
     padding: 60px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .communityHeader {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .communityHeader h2 {
@@ -194,17 +194,13 @@ header {
     font-weight: 700;
     color: #3E4C35;
     line-height: 1.2;
-    margin-bottom: 40px;
 }
 
 .communityList {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 90px;
+    gap: 25px;
 }
 
 .communityItem {
@@ -243,6 +239,202 @@ header {
     height: 800px;
     width: 400px;
     border-radius: 400px;
+    object-fit: cover;
+}
+
+.inspirationSection {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.inspirationHeader {
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+.inspirationHeader h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.inspirationSubtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3E4C35;
+    line-height: 1.2;
+}
+
+.inspirationCarousel {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 10px 0 20px 0;
+    user-select: none;
+}
+
+.inspirationRow {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: scrollInfinite 40s linear infinite;
+}
+
+.topRow {
+    padding-left: 0;
+}
+
+.bottomRow {
+    margin-left: -132px;
+    animation-duration: 48s;
+}
+
+.inspirationCard {
+    width: 240px;
+    height: 240px;
+    border-radius: 36px;
+    border: 1px solid #3E4C35;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 0;
+    background-color: #eefff0;
+}
+
+.inspirationImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    transition: transform 0.35s ease;
+}
+
+.inspirationCard:hover .inspirationImg {
+    transform: scale(1.06);
+}
+
+@keyframes scrollInfinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.aboutNews{
+    padding: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.aboutNews h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.3;
+}
+
+.aboutNews strong{
+    font-weight: 700;
+    color: #3E4C35;
+}
+
+.aboutNews p{
+    margin: 32px 0px 56px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.aboutNews p strong {
+    color: #3E4C35;
+    font-weight: 600;
+}
+
+.aboutNews h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3E4C35;
+    margin-bottom: 30px;
+}
+
+.aboutNewsLetter {
+    width: 100%;
+}
+
+.newsForm {
+    width: 100%;
+    max-width: 1100px;
+    background: linear-gradient(180deg, #98e629 0%, #8cd91e 100%);
+    border-radius: 36px;
+    padding: 45px 55px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), inset 0 2px 6px rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formLabel {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formInput {
+    width: 100%;
+    max-width: 720px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #3E4C35;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+.formInput::placeholder {
+    color: #9e9e9e;
+}
+
+.formInput:focus {
+    box-shadow: 0 0 0 2px #3E4C35;
+}
+
+.submitFormBtn {
+    width: 180px;
+    height: 44px;
+    margin-top: 8px;
+    background-color: #2d421e;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitFormBtn:hover {
+    background-color: #3E4C35;
+    transform: translateY(-2px);
 }
 
 .mainFooter {
@@ -262,7 +454,6 @@ header {
     margin-top: 80px;
 }
 
-
 .footerLogoContainer {
     grid-area: logo;
     align-self: center;
@@ -273,13 +464,11 @@ header {
     height: auto;
 }
 
-
 .footerBody {
     grid-area: body;
     border-left: 4px solid rgba(255, 255, 255, 0.7);
     padding-left: 40px;
 }
-
 
 .footerTagline {
     font-size: 22px;
@@ -290,7 +479,6 @@ header {
     color: #ffffff;
 }
 
-
 .footerColumns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -300,9 +488,8 @@ header {
 .footerColumn {
     display: flex;
     flex-direction: column;
-    font-style: normal; /* Remove o itálico padrão da tag <address> */
+    font-style: normal;
 }
-
 
 .footerColumn h4 {
     font-size: 11px;
@@ -314,14 +501,12 @@ header {
     color: #ffffff;
 }
 
-
 .footerColumn ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 
 .footerColumn a {
     font-size: 13px;
@@ -334,7 +519,6 @@ header {
 .footerColumn a:hover {
     opacity: 0.75;
 }
-
 
 .socialLinks {
     display: flex;
@@ -354,7 +538,6 @@ header {
     height: 24px;
 }
 
-
 .footerCopyright {
     grid-area: copyright;
     font-size: 11px;
@@ -362,4 +545,157 @@ header {
     color: rgba(255, 255, 255, 0.9);
     text-align: right;
     margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    header.heroHeader {
+        padding: 20px 40px;
+    }
+    .heroHeaderNav, .heroHeaderNav ul {
+        gap: 30px;
+    }
+    .heroSection, .communitySection, .aboutNews {
+        padding: 60px 40px;
+    }
+    .heroSection img, .comunityImg img {
+        height: 500px;
+        width: 320px;
+    }
+    .footerColumns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.heroHeader {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .heroHeaderNav, .heroHeaderNav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heroHeaderImg {
+        width: 90px;
+        height: auto;
+    }
+    
+    .heroSection {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        min-height: auto;
+        gap: 40px;
+    }
+    .heroText h1 {
+        font-size: 28px;
+    }
+    .heroText p {
+        font-size: 16px;
+    }
+    .heroSection img {
+        height: 380px;
+        width: 250px;
+    }
+
+    .aboutService {
+        padding: 40px 20px;
+    }
+    .ServiceCardsRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .ServiceCards {
+        width: 100%;
+        max-width: 280px;
+        height: 240px;
+        margin: 0;
+    }
+
+    .communitySection {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .communityCard {
+        height: auto;
+        min-height: auto;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+    .communityHeader {
+        margin-bottom: 25px;
+    }
+    .communityHeader h2, .communitySubtitle {
+        font-size: 22px;
+    }
+    .communityList {
+        gap: 20px;
+    }
+    .comunityImg img {
+        height: 380px;
+        width: 250px;
+    }
+
+    .inspirationHeader {
+        padding: 0 20px;
+    }
+    .inspirationCard {
+        width: 160px;
+        height: 160px;
+        border-radius: 24px;
+    }
+    .bottomRow {
+        margin-left: -90px;
+    }
+
+    .aboutNews {
+        padding: 40px 20px;
+    }
+    .aboutNews h3 {
+        font-size: 22px;
+    }
+    .aboutNews p {
+        margin: 20px 0 30px;
+        font-size: 15px;
+    }
+    .aboutNews h2 {
+        font-size: 26px;
+    }
+    .newsForm {
+        padding: 30px 20px;
+        border-radius: 25px;
+        gap: 25px;
+    }
+    .formInput {
+        max-width: 100%;
+    }
+
+    .mainFooter {
+        padding: 40px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "body"
+            "copyright";
+        row-gap: 30px;
+    }
+    .footerBody {
+        border-left: none;
+        border-top: 4px solid rgba(255, 255, 255, 0.7);
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .footerColumns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .footerCopyright {
+        text-align: left;
+        margin-top: 20px;
+    }
 }
