@@ -11,14 +11,18 @@
   margin: 0px 15px;
 }
 
+p{
+  margin: 20px;
+}
+
 h1{
    color: #123D27;
+   margin: 20px;
 }
 
 ol{
   color: #123D27;
 }
-
 
 .contatopoliticadeprivacidade{
   display: grid;
@@ -31,10 +35,36 @@ ol{
 }
 
 .emailpoliticadeprivacidade{
- display: flex;
+display: flex;
   align-items: center;
   color: #123D27;
   margin: 0px 20px;
+}
+
+.telefonepoliticadeprivacidade{
+   display: flex;
+  align-items: center;
+  color: #123D27;
+  margin: 0px 20px;
+}
+
+.btnpoliticadeprivacidade{
+  background-color: transparent;
+border-radius: 20px;
+color: #b5dea8;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+.btnpoliticadeprivacidade a:hover{
+  color: black;
+  padding-bottom:0.5s;
+  cursor: pointer;
+}
+
+.navpoliticadeprivacidade a{
+   text-decoration: none;
+  color: #123D27;
 }
 
   .rodapepoliticadeprivacidade{

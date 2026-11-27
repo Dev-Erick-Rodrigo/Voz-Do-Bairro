@@ -7,17 +7,184 @@
   <title>Registrar-se</title>
 </head>
 <body>
-  <header>
-    <h1>Registrar-se</h1>
-    <nav><p>Já tem uma conta? <a href="">Entrar</a></p></nav>
-  </header>
 
-  <p>Preencha os dados abaixo para criar sua conta.</p>
+  <header class="heroHeader">
+        <div>
+            <img src="../assets/img/logo-voz-do-bairro.svg" alt="Logo Voz do Bairro" class="heroHeaderImg">
+        </div>
+        <nav class="heroHeaderNav">
+            <ul>
+                <li><a href="./home.html" class="SimpleBtn">Início</a></li>
+                <li><a href="./noticiasEAvisos.html" class="SimpleBtn">Notícias e Avisos</a></li>
+                <li><a href="./ocorrenciasnaRegiao.html" class="SimpleBtn">Mapa da Região</a></li>
+                <li><a href="./acompanhamento.html" class="SimpleBtn">Acompanhar Ocorrências</a></li>
+                <li><a href="./novasOcorrencias.html"><span class="RegBtn">Registrar Ocorrência</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section>
-    <h3>Informações pessoais</h3>
-  </section>
+<section>
+  <h1>Registre-se</h1>
   
+<p>Já tem uma conta?<a href="./Login.html">Entrar</a></p>
+
+<p>Preencha os dados abaixo para criar sua conta.</p>
+
+<div>
+<img width="48" height="48" src="https://img.icons8.com/sf-regular-filled/48/user.png" alt="user"/>
+<h2>Informações pessoais</h2>
+</div>
+
+<form action="./registrar-se.html" method="get">
+
+<div>
+<h4>Nome Completo</h4>
+<p>Ex: João da Silva</p>
+</div>
+
+<div>
+  <h4>Data de Nascimento</h4>
+  <div>
+  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/calendar.png" alt="calendar"/>
+  <p>dd/mm/aaaa</p>
+  </div>
+</div>
+
+<div>
+  <h4>CPF</h4>
+  <p>000.000.000-00</p>
+</div>
+</form>
+
+<hr>
+
+<div>
+  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/new-post.png" alt="new-post"/>
+<h2>Informações de Contato</h2>
+</div>
+
+<div>
+  <h4>G-mail</h4>
+  <p>seuemail123@exemplo.com</p>
+</div>
+
+<div>
+  <h4>Telefone</h4>
+  <p>(00) 00000-0000</p>
+</div>
+
+<hr>
+
+<div>
+  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/lock.png" alt="lock"/>
+  <h2>Segurança</h2>
+</div>
+
+<div>
+<h4>Senha</h4>
+<img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/lock--v1.png" alt="lock--v1"/>
+<p>Crie uma senha forte</p>
+<p>Use pelo menos 8 caracteres com letras, números e símbolos</p>
+</div>
+
+<div>
+  <h4>Confirmar Senha</h4>
+</div>
+
+<div>
+  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/lock--v1.png" alt="lock--v1"/>
+  <p>Confirmar sua senha</p>
+</div>
+
+<hr>
+
+
+
+</section>
+
+<form action="./registrar-se.html" method="get">
+  <label for="nome"><h4>Nome</h4></label>
+  <input type="text" id="nome">
+  <input type="text">
+</form>
+  
+
+
+
+
+<footer class="mainFooter">
+   <div class="footerLogoContainer">
+    <img src="../assets/img/logo-voz-do-bairro.svg" alt="Logo Voz do Bairro" class="footerLogoImg">
+   </div>
+
+ <div class="footerBody">
+  <p class="footerTagline">
+   Informação, participação e cuidado com os espaços públicos.
+   </p>
+
+<div class="footerColumns">
+  <nav class="footerColumn" aria-label="Navegue em nosso site">
+   <h4>Navegue em<br>nosso site</h4>
+   <ul>
+    <li><a href="#">Ver Ocorrências</a></li>
+    <li><a href="#">Criar Conta</a></li>
+    <li><a href="#">Acompanhar Ocorrência</a></li>
+     <li><a href="#">Avalie-nos</a></li>
+     </ul>
+    </nav>
+
+   <nav class="footerColumn" aria-label="Saiba mais sobre a plataforma">
+   <h4>Saiba mais sobre<br>a plataforma</h4>
+   <ul>
+  <li><a href="#">Política de Privacidade</a></li>
+    <li><a href="#">LGPD</a></li>
+  <li><a href="#">Perguntas Frequentes</a></li>
+    </ul>
+    </nav>
+
+
+                <address class="footerColumn">
+                    <h4>Entre em contato<br>conosco</h4>
+                    <ul>
+                        <li><a href="tel:+5511999999999">11 99999-9999</a></li>
+                        <li><a href="mailto:vozdobairro@plataforma.com">vozdobairro@plataforma.com</a></li>
+                    </ul>
+                </address>
+
+                <div class="footerColumn">
+                    <h4>Voz do Bairro nas<br>redes</h4>
+                    <div class="socialLinks">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                       
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <small class="footerCopyright">
+            Voz do Bairro 2026. Todos os Direitos Reservados®
+        </small>
+    </footer>
+    </div>
 
 
 </body>

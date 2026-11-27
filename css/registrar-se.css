@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff; 
+}
+
+.heroContent{
+    width: 100%;            
+    max-width: 1920px;     
+    margin: 0 auto;        
+    min-height: 100vh;
+    background-color: #ffffff; /* Base totalmente branca */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+
+header.heroHeader, 
+header {
+    width: 100%;
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 10;
+}
+
+.heroHeaderImg{
+    width: 120px;
+    height: 90px;
+}
+
+.heroHeaderNav,
+.heroHeaderNav ul,
+.heroHeaderNav li,
+.heroHeaderNav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: #3E4C35;
+    gap: 80px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.SimpleBtn:hover{
+    transition: 0.7s;
+    border-bottom: 2px solid #6BBF00;
+    font-size: 16px;
+}
+
+.RegBtn{
+    background-color: #3E4C35;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.RegBtn:hover{
+    transition: 0.3s;
+    background-color: #C0FD75;
+    color: #3E4C35;
+    border-radius: 40px;
+}
+
+body{
+  background: url(../assets/img/REGISTRE-SE\ fundo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+
+}
+
+
+
+
+
+
+
+.mainFooter {
+    background:
+        radial-gradient(ellipse 45% 70% at 50% 45%, #74cd0e 0%, rgba(116, 205, 14, 0) 100%),
+        linear-gradient(90deg, #a4ee77 0%, #9bea62 100%);
+    color: #ffffff;
+    padding: 50px 80px 30px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "logo body"
+        "logo copyright";
+    column-gap: 40px;
+    align-items: start;
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+.footerLogoContainer {
+    grid-area: logo;
+    align-self: center;
+}
+
+.footerLogoImg {
+    width: 150px;
+    height: auto;
+}
+
+
+.footerBody {
+    grid-area: body;
+    border-left: 4px solid rgba(255, 255, 255, 0.7);
+    padding-left: 40px;
+}
+
+
+.footerTagline {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+
+.footerColumns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    font-style: normal; /* Remove o itálico padrão da tag <address> */
+}
+
+
+.footerColumn h4 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+
+.footerColumn ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.footerColumn a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footerColumn a:hover {
+    opacity: 0.75;
+}
+
+
+.socialLinks {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.socialLinks svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.footerCopyright {
+    grid-area: copyright;
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: right;
+    margin-top: 40px;
+}
