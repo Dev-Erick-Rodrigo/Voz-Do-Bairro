@@ -2,32 +2,38 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/novasOcorrencias.css" />
+    <link rel="stylesheet" href="../css/style .css" />
+    <link rel="stylesheet" href="../css/novasOcorrencias .css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script src="../js/comum.js" defer></script>
+    <script src="../js/novasOcorrencias .js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Ocorrência</title>
   </head>
   <body>
     <header class="ocorrenciaHeader">
       <div class="ocorrenciaHeaderLogo">
-        <img
+        <a href="./home.html"><img
           src="../assets/img/logo-voz-do-bairro.svg"
           alt="Logo Voz do Bairro"
           height="70"
-        />
+        /></a>
       </div>
       <nav class="ocorrenciaHeaderNav">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Notícias e avisos</a></li>
-          <li><a href="#">Mapa da Região</a></li>
-          <li><a href="#">Acompanhar ocorrências</a></li>
+          <li><a href="./home.html">Início</a></li>
+          <li><a href="./noticiasEAvisos .html">Notícias e avisos</a></li>
+          <li><a href="./ocorrenciasnaRegiao.html">Mapa da Região</a></li>
+          <li><a href="./acompanhamento.html">Acompanhar ocorrências</a></li>
           <li>
-            <a href="#" class="menuBotao" aria-current="page"
+            <a href="./novasOcorrencias .html" class="menuBotao" aria-current="page"
               >Nova Ocorrência</a
             >
           </li>
-          <li><a href="#" class="menuBotao">Fazer login</a></li>
+          <li><a href="./Login.html" class="menuBotao">Fazer login</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +58,7 @@
           </section>
           <hr />
           <section class="informacoesOcorrencia">
-            <form id="formOcorrencia">
+            <form id="formOcorrencia" novalidate>
               <div class="tituloOcorrencia">
                 <label for="campoTituloOcorrencia"
                   ><span aria-hidden="true">☰</span> Título da ocorrência</label
@@ -251,18 +257,48 @@
       />
       <div class="informacoesFooter">
         <p>Informação, participação e cuidado com os espaços públicos.</p>
-        <nav class="outrasPaginas">
-          <ul>
-            <li><a href="#">Ocorrências</a></li>
-            <li><a href="#">Acompanhamento</a></li>
-            <li><a href="#">Registrar</a></li>
-            <li><a href="#">Avalie-nos</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="direitosAutorais">
-        <p>Todos os Direitos Reservados®</p>
+        <div class="colunasFooter">
+          <nav class="outrasPaginas">
+            <h2>Navegue em nosso site</h2>
+            <ul>
+              <li><a href="./ocorrenciasnaRegiao.html">Ver Ocorrências</a></li>
+              <li><a href="./registrar-se.html">Criar Conta</a></li>
+              <li><a href="./acompanhamento.html">Acompanhar Ocorrência</a></li>
+              <li><a href="./avaliacoes .html">Avalie-nos</a></li>
+            </ul>
+          </nav>
+          <nav class="sobrePlataforma">
+            <h2>Saiba mais sobre a plataforma</h2>
+            <ul>
+              <li><a href="./PoliticadePrivacidade.html">Política de Privacidade</a></li>
+              <li><a href="./PoliticadePrivacidade.html">LGPD</a></li>
+              <li><a href="./avaliacoes .html#perguntasFrequentes">Perguntas Frequentes</a></li>
+            </ul>
+          </nav>
+          <div class="contatoFooter">
+            <h2>Entre em contato conosco</h2>
+            <ul>
+              <li><a href="tel:+5511999999999">11 99999-9999</a></li>
+              <li>
+                <a href="mailto:vozdobairro@plataforma.com"
+                  >vozdobairro@plataforma.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="redesFooter">
+            <h2>Voz do Bairro nas redes</h2>
+            <ul>
+              <li><a href="https://www.instagram.com/somos_vozdobairro" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg></a></li>
+              <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M15.5 21v-7h2.4l.4-3h-2.8V9.3c0-.8.3-1.3 1.4-1.3h1.5V5.3A17 17 0 0 0 16.2 5c-2.2 0-3.7 1.3-3.7 3.8V11H10v3h2.5v7"/></svg></a></li>
+              <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.2c0-1.7 1-2.8 2.5-2.8S17 11.4 17 13.2V17"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="direitosAutorais">
+          <p>Voz do Bairro 2026. Todos os Direitos Reservados®</p>
+        </div>
       </div>
     </footer>
   </body>
-</html>
+</html> 

@@ -1,0 +1,361 @@
+.ocorrenciaCartao {
+  padding: 28px;
+  border: 1px solid #dbe3d8;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.novaOcorrencia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ocorrenciaTextoAlerta {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ocorrenciaNumero {
+  font-size: 18px;
+}
+
+.rascunho {
+  padding: 6px 16px;
+  border: 1px solid var(--verdeBorda);
+  border-radius: 999px;
+  background-color: var(--verdeCard);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--verdeEscuro);
+}
+
+.rascunho.enviada {
+  background-color: var(--verdeVivo);
+  border-color: var(--verdeVivo);
+}
+
+.ocorrenciaCartao > hr {
+  margin: 20px 0;
+}
+
+#formOcorrencia {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#formOcorrencia label,
+#formOcorrencia legend {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#formOcorrencia legend {
+  padding: 0;
+}
+
+#formOcorrencia input[type="text"],
+#formOcorrencia textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--cinzaBorda);
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+#formOcorrencia input::placeholder,
+#formOcorrencia textarea::placeholder {
+  color: #767676;
+}
+
+#formOcorrencia textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+#formOcorrencia [aria-invalid="true"] {
+  border-color: #b3261e;
+}
+
+.erroCampo {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #b3261e;
+}
+
+.categoriaOcorrencias fieldset,
+.urgenciaOcorrencia fieldset {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categoriaOcorrencias legend,
+.urgenciaOcorrencia legend {
+  width: 100%;
+}
+
+.categoriaOcorrencias input,
+.urgenciaOcorrencia input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.categoriaOcorrencias label,
+.urgenciaOcorrencia label {
+  margin: 0 !important;
+  padding: 8px 20px;
+  border: 1.5px solid var(--cinzaBorda);
+  border-radius: 999px;
+  background-color: #fff;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+.categoriaOcorrencias label:hover,
+.urgenciaOcorrencia label:hover {
+  border-color: var(--verdeEscuro);
+}
+
+.categoriaOcorrencias input:checked + label,
+.urgenciaOcorrencia input:checked + label {
+  border-color: var(--verdeVivo);
+  background-color: var(--verdeVivo);
+  font-weight: 500 !important;
+  color: var(--verdeEscuro);
+}
+
+.categoriaOcorrencias input:checked + label::before,
+.urgenciaOcorrencia input:checked + label::before {
+  content: "✓ ";
+}
+
+.categoriaOcorrencias input:focus-visible + label,
+.urgenciaOcorrencia input:focus-visible + label {
+  outline: 3px solid var(--verdeEscuro);
+  outline-offset: 2px;
+}
+
+.localizacaoOcorrencia fieldset {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-areas:
+    "titulo titulo"
+    "rotuloRua rotuloBairro"
+    "campoRua campoBairro"
+    "botao botao";
+  column-gap: 16px;
+}
+
+.localizacaoOcorrencia legend {
+  grid-area: titulo;
+}
+
+.localizacaoOcorrencia label[for="ruaEnumero"] {
+  grid-area: rotuloRua;
+}
+
+.localizacaoOcorrencia label[for="bairro"] {
+  grid-area: rotuloBairro;
+}
+
+#ruaEnumero {
+  grid-area: campoRua;
+}
+
+#bairro {
+  grid-area: campoBairro;
+}
+
+.minhaLocalizacao {
+  grid-area: botao;
+  justify-self: start;
+  margin-top: 12px;
+  padding: 8px 20px;
+  border: 1.5px solid var(--verdeEscuro);
+  border-radius: 999px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.minhaLocalizacao:hover {
+  background-color: var(--verdeCard);
+}
+
+#formOcorrencia hr {
+  margin: 0;
+}
+
+.fotosOcorrencia fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.fotosOcorrencia legend {
+  grid-column: 1 / -1;
+}
+
+.fotosOcorrencia legend span {
+  font-weight: 400;
+}
+
+.fotosOcorrencia input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+#formOcorrencia .fotosOcorrencia label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 104px;
+  margin: 0 !important;
+  border: 2px dashed #5a7d4a;
+  border-radius: 12px;
+  background-color: #e8f4d8;
+  cursor: pointer;
+}
+
+#formOcorrencia .fotosOcorrencia label::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: var(--verdeEscuro);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h4l2-3h6l2 3h4v12H3z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.fotosOcorrencia input:focus-visible + label {
+  outline: 3px solid var(--verdeEscuro);
+  outline-offset: 2px;
+}
+
+.semFotos {
+  display: grid;
+  place-items: center;
+  min-height: 104px;
+  padding: 12px;
+  border: 2px solid var(--verdeEscuro);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b3401a;
+}
+
+.semFotos.comFotos {
+  color: var(--verdeEscuro);
+}
+
+.bts {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bts button {
+  padding: 12px 28px;
+  border: 2px solid var(--verdeEscuro);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.salvar {
+  background-color: #fff;
+  color: var(--verdeEscuro);
+}
+
+.salvar:hover {
+  background-color: var(--verdeCard);
+}
+
+.enviar {
+  background-color: var(--verdeEscuro);
+  color: #fff;
+}
+
+.enviar:hover {
+  background-color: var(--verdeTitulo);
+}
+
+.depoisDeEnviarOcorrencia h2 {
+  font-size: 20px;
+}
+
+.depoisDeEnviarOcorrencia ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.depoisDeEnviarOcorrencia li {
+  position: relative;
+  padding: 0 0 16px 28px;
+}
+
+.depoisDeEnviarOcorrencia li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--verdeVivo);
+  border-radius: 50%;
+  background-color: var(--verdeCard);
+}
+
+.depoisDeEnviarOcorrencia li:first-child::before {
+  background-color: #4f9a1a;
+  border-color: #4f9a1a;
+}
+
+.depoisDeEnviarOcorrencia li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  bottom: -4px;
+  width: 2px;
+  background-color: #4f9a1a;
+}
+
+.depoisDeEnviarOcorrencia li strong {
+  font-size: 15px;
+  color: var(--verdeTitulo);
+}
+
+@media (max-width: 600px) {
+  .fotosOcorrencia fieldset,
+  .localizacaoOcorrencia fieldset {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "rotuloRua"
+      "campoRua"
+      "rotuloBairro"
+      "campoBairro"
+      "botao";
+  }
+
+  .ocorrenciaCartao {
+    padding: 20px;
+  }
+}

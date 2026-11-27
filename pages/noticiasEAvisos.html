@@ -2,28 +2,34 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/noticias.css" />
+    <link rel="stylesheet" href="../css/style .css" />
+    <link rel="stylesheet" href="../css/noticias .css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script src="../js/comum.js" defer></script>
+    <script src="../js/noticias .js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notícias e avisos</title>
   </head>
   <body>
     <header class="noticiaHeader">
       <div class="noticiaHeaderLogo">
-        <img
+        <a href="./home.html"><img
           src="../assets/img/logo-voz-do-bairro.svg"
           alt="Logo Voz do Bairro"
           height="70"
-        />
+        /></a>
       </div>
       <nav class="noticiaHeaderNav">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#" aria-current="page">Notícias e avisos</a></li>
-          <li><a href="#">Mapa da Região</a></li>
-          <li><a href="#">Acompanhar ocorrências</a></li>
-          <li><a href="#" class="menuBotao">Nova Ocorrência</a></li>
-          <li><a href="#" class="menuBotao">Fazer login</a></li>
+          <li><a href="./home.html">Início</a></li>
+          <li><a href="./noticiasEAvisos.html" aria-current="page">Notícias e avisos</a></li>
+          <li><a href="./ocorrenciasnaRegiao.html">Mapa da Região</a></li>
+          <li><a href="./acompanhamento.html">Acompanhar ocorrências</a></li>
+          <li><a href="./novasOcorrencias .html" class="menuBotao">Nova Ocorrência</a></li>
+          <li><a href="./Login.html" class="menuBotao">Fazer login</a></li>
         </ul>
       </nav>
     </header>
@@ -147,7 +153,7 @@
               </fieldset>
             </form>
             <div class="gradeNoticias">
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="iluminacao">
                 <img
                   src="../assets/img/noticia-iluminacao.jpg"
                   alt="Foto da notícia"
@@ -165,7 +171,7 @@
                   <a href="#">Ler mais <span aria-hidden="true">→</span></a>
                 </div>
               </article>
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="viasEcalcadas">
                 <img
                   src="../assets/img/noticia-vias.jpg"
                   alt="Foto da notícia"
@@ -183,7 +189,7 @@
                   <a href="#">Ler mais <span aria-hidden="true">→</span></a>
                 </div>
               </article>
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="lixoEentulho">
                 <img
                   src="../assets/img/noticia-lixo.jpg"
                   alt="Foto da notícia"
@@ -201,7 +207,7 @@
                   <a href="#">Ler mais <span aria-hidden="true">→</span></a>
                 </div>
               </article>
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="seguranca">
                 <img
                   src="../assets/img/noticia-seguranca.jpg"
                   alt="Foto da notícia"
@@ -219,7 +225,7 @@
                   <a href="#">Ler mais <span aria-hidden="true">→</span></a>
                 </div>
               </article>
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="esgotoEagua">
                 <img
                   src="../assets/img/noticia-agua.jpg"
                   alt="Foto da notícia"
@@ -237,7 +243,7 @@
                   <a href="#">Ler mais <span aria-hidden="true">→</span></a>
                 </div>
               </article>
-              <article class="noticiaCard">
+              <article class="noticiaCard" data-categoria="outros">
                 <img
                   src="../assets/img/noticia-outros.jpg"
                   alt="Foto da notícia"
@@ -256,13 +262,16 @@
                 </div>
               </article>
             </div>
+            <p class="semNoticias" hidden>
+              Nenhuma notícia nessa categoria por enquanto.
+            </p>
           </section>
         </div>
         <aside>
           <section class="receberAvisos">
             <h2>Receba os avisos</h2>
             <p>Informe seu e-mail para receber os avisos do seu bairro.</p>
-            <form id="formReceberAvisos">
+            <form id="formReceberAvisos" novalidate>
               <label for="emailAvisos">E-mail</label>
               <input
                 placeholder="seuemail@exemplo.com"
@@ -316,17 +325,47 @@
       />
       <div class="informacoesFooter">
         <p>Informação, participação e cuidado com os espaços públicos.</p>
-        <nav class="outrasPaginas">
-          <ul>
-            <li><a href="#">Ocorrências</a></li>
-            <li><a href="#">Acompanhamento</a></li>
-            <li><a href="#">Registrar</a></li>
-            <li><a href="#">Avalie-nos</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="direitosAutorais">
-        <p>Todos os Direitos Reservados®</p>
+        <div class="colunasFooter">
+          <nav class="outrasPaginas">
+            <h2>Navegue em nosso site</h2>
+            <ul>
+              <li><a href="./ocorrenciasnaRegiao.html">Ver Ocorrências</a></li>
+              <li><a href="./registrar-se.html">Criar Conta</a></li>
+              <li><a href="./acompanhamento.html">Acompanhar Ocorrência</a></li>
+              <li><a href="./avaliacoes .html">Avalie-nos</a></li>
+            </ul>
+          </nav>
+          <nav class="sobrePlataforma">
+            <h2>Saiba mais sobre a plataforma</h2>
+            <ul>
+              <li><a href="./PoliticadePrivacidade.html">Política de Privacidade</a></li>
+              <li><a href="./PoliticadePrivacidade.html">LGPD</a></li>
+              <li><a href="./avaliacoes .html#perguntasFrequentes">Perguntas Frequentes</a></li>
+            </ul>
+          </nav>
+          <div class="contatoFooter">
+            <h2>Entre em contato conosco</h2>
+            <ul>
+              <li><a href="tel:+5511999999999">11 99999-9999</a></li>
+              <li>
+                <a href="mailto:vozdobairro@plataforma.com"
+                  >vozdobairro@plataforma.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="redesFooter">
+            <h2>Voz do Bairro nas redes</h2>
+            <ul>
+              <li><a href="https://www.instagram.com/somos_vozdobairro" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg></a></li>
+              <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M15.5 21v-7h2.4l.4-3h-2.8V9.3c0-.8.3-1.3 1.4-1.3h1.5V5.3A17 17 0 0 0 16.2 5c-2.2 0-3.7 1.3-3.7 3.8V11H10v3h2.5v7"/></svg></a></li>
+              <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.2c0-1.7 1-2.8 2.5-2.8S17 11.4 17 13.2V17"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="direitosAutorais">
+          <p>Voz do Bairro 2026. Todos os Direitos Reservados®</p>
+        </div>
       </div>
     </footer>
   </body>
