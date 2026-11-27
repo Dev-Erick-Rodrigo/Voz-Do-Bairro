@@ -13,6 +13,38 @@ body{
     background-color: #ffffff; 
 }
 
+.mobileMenuBtn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 20;
+}
+
+.hamburgerLine {
+    width: 100%;
+    height: 3px;
+    background-color: #3E4C35;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animação do botão transformando-se em "X" quando aberto */
+.mobileMenuBtn.active .hamburgerLine:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+.mobileMenuBtn.active .hamburgerLine:nth-child(2) {
+    opacity: 0;
+}
+.mobileMenuBtn.active .hamburgerLine:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
 .heroContent{
     width: 100%;            
     max-width: 1920px;     
@@ -175,7 +207,7 @@ header {
     padding: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .communityHeader {
@@ -200,7 +232,8 @@ header {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 75px;
+    margin-top: 64px;
 }
 
 .communityItem {
