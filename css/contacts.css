@@ -278,3 +278,61 @@ header {
     text-align: right;
     margin-top: 40px;
 }
+
+@media (max-width: 1024px) {
+    header.heroHeader {
+        padding: 20px 40px;
+    }
+    .heroHeaderNav ul {
+        gap: 30px;
+    }
+    .heroServiceCentral {
+        padding: 60px 40px;
+    }
+    .footerColumns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.heroHeader {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .heroHeaderNav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heroServiceCentral {
+        padding: 40px 20px;
+    }
+    .heroServiceCards {
+        grid-template-columns: 1fr; /* Coluna única no telemóvel */
+    }
+    .mainFooter {
+        padding: 40px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "body"
+            "copyright";
+        row-gap: 30px;
+    }
+    .footerBody {
+        border-left: none;
+        border-top: 4px solid rgba(255, 255, 255, 0.7);
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .footerColumns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .footerCopyright {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
